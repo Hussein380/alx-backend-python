@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 add: takes a float a and float b an returns their sun
@@ -9,6 +8,6 @@ returns: float sum
 
 """
 
-def add (a: float, b: float) -> float:
-    return a + b
 
+def add(a: float, b: float) -> float:
+    return a + b
