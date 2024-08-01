@@ -2,7 +2,7 @@
 import math
 
 """
-floor: type-annotated function floor which takes a float n as argument 
+floor: type-annotated function floor which takes a float n as argument
 and returns the floor of the float.
 Args:
     n: argument that is float
