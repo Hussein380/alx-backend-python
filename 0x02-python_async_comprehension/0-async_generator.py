@@ -1,21 +1,14 @@
 #!/usr/bin/env python3
+'''Task 0's module.
 '''
-asycn_generator module
-This module explain the async_generator coroutines that yield random
-number
-'''
-
 import asyncio
 import random
-from typing import AsyncGenerator
+from typing import Generator
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
-    """
-    coroutines that yield a random number betweeen 0 and 10, ten times
-    Each iteration waits for1 second before it yields the number
-
-    """
+async def async_generator() -> Generator[float, None, None]:
+    '''Generates a sequence of 10 numbers.
+    '''
     for _ in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        yield random.random() * 10
