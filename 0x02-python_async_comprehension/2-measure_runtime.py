@@ -7,6 +7,8 @@ async_comprehension four times in parallel and measures the total runtime.
 
 import asyncio
 import time
+from importlib import_module as using
+
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
